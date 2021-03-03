@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="name"
+        android:padding="8dp"
+        android:inputType="text"
+        android:background="@drawable/bg_edit"/>
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="title"
+        android:inputType="text"
+        android:padding="8dp"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:hint="message"
+        android:padding="8dp"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="8dp"/>
+<!--    <EditText-->
+<!--        android:id="@+id/et_nicknamedb"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/bg_edit"-->
+<!--        android:hint="price"-->
+<!--        android:padding="8dp"-->
+<!--        android:inputType="text"-->
+<!--        android:layout_marginTop="8dp"/>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select image"
+        android:layout_gravity="right"
+        android:onClick="clickSelectImage"/>
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_edit"
+        android:src="@drawable/ic__image_40"
+        android:padding="4dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="complete"
+        android:onClick="clickComplete"/>
+
+</LinearLayout>
